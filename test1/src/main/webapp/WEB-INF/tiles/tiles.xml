@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+  
+<tiles-definitions>
+
+
+<!-- <definition name ="??????" template ="/WEB-INF/tiles/layout/layout.jsp"> -->
+<!-- 		<put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/> -->
+<!-- 		<put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/> -->
+<!-- 		<put-attribute name="body" value ="/WEB-INF/views/?????/?????.jsp"/> -->
+<!-- 		<put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/> -->
+<!-- </definition> -->
+	
+<!-- 	타일즈 정의 -->
+	<definition name ="layout" template ="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+		<put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+		<put-attribute name="body" value =""/>
+		<put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+	</definition>
+	
+
+	
+	<definition name ="test2" template ="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+		<put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+		<put-attribute name="body" value ="/WEB-INF/views/test/test2.jsp"/>
+		<put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+	</definition>
+
+
+	<definition name ="hi" template ="/WEB-INF/tiles/layout/layout2.jsp">
+		<put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+		<put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+		<put-attribute name="body" value ="/WEB-INF/views/test/test.jsp"/>
+		<put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+	</definition>
+
+	<definition name="*/*" extends="base">
+	  	<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp" />
+	</definition>
+	
+<!-- 	20.08.31 유진 -->
+	<definition name ="login" template ="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="body" value ="/WEB-INF/views/login.jsp"/>
+	</definition>
+	
+<!-- 	20.08.31 유진 -->
+	<definition name ="UserList" template ="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+		<put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+		<put-attribute name="body" value ="/WEB-INF/views/User/UserList.jsp"/>
+		<put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+	</definition>
+	
+	<!-- 	20.08.31 유진 -->
+	<definition name ="signUp" template ="/WEB-INF/tiles/layout/layout.jsp">
+		<put-attribute name="body" value ="/WEB-INF/views/User/signUp.jsp"/>
+	</definition>
+	
+	<definition name ="dgInfoView" template ="/WEB-INF/tiles/layout/layout2.jsp">
+	    <put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+	    <put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+	    <put-attribute name="body" value ="/WEB-INF/views/dgInfo/dgInfoView.jsp"/>
+	    <put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+    </definition>
+	
+	<definition name ="dgNoticeBoard" template ="/WEB-INF/tiles/layout/layout2.jsp">
+	    <put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+	    <put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+	    <put-attribute name="body" value ="/WEB-INF/views/dgBoard/dgNoticeBoard.jsp"/>
+	    <put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+   	</definition>
+
+<!-- 20.09.23 유진 -->
+	<definition name ="ProductList" template ="/WEB-INF/tiles/layout/layout2.jsp">
+	    <put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+	    <put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+	    <put-attribute name="body" value ="/WEB-INF/views/shopping/ProductList.jsp"/>
+	    <put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+   	</definition>
+   	
+   	
+   	
+<!--       원희 -->
+   <definition name ="dgNoticeBoardInsert" template ="/WEB-INF/tiles/layout/layout2.jsp">
+       <put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+       <put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+       <put-attribute name="body" value ="/WEB-INF/views/dgBoard/dgNoticeBoardInsert.jsp"/>
+       <put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+   </definition>
+      
+   <definition name ="dgNoticeBoardDetail" template ="/WEB-INF/tiles/layout/layout2.jsp">
+       <put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+       <put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+       <put-attribute name="body" value ="/WEB-INF/views/dgBoard/dgNoticeBoardDetail.jsp"/>
+       <put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+   </definition>
+
+   <definition name ="dgNoticeBoardUpdate" template ="/WEB-INF/tiles/layout/layout2.jsp">
+       <put-attribute name="sidebar" value ="/WEB-INF/tiles/tile/sidebar.jsp"/>
+       <put-attribute name="header" value ="/WEB-INF/tiles/tile/header.jsp"/>
+       <put-attribute name="body" value ="/WEB-INF/views/dgBoard/dgNoticeBoardUpdate.jsp"/>
+       <put-attribute name="footer" value ="/WEB-INF/tiles/tile/footer.jsp"/>
+   </definition>
+
+</tiles-definitions>
