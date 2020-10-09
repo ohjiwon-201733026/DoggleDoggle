@@ -15,7 +15,7 @@ img{
 </head>
 <body>
 
-<!-- 수정해보았어요 -->
+
 
 
    <main id="js-page-content" role="main" class="page-content">
