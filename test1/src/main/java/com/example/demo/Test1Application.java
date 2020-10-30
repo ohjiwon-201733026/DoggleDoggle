@@ -9,15 +9,14 @@ import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
-////디비 에러가 만약에 생기면 여기에 dao추가
-@MapperScan(value = {"com.example.test.mapper", "com.example.user.mapper", "com.example.dgBoard.mapper", "com.example.dgInfo.mapper" })
+////디비 에러가 만약에 생기면 여기에 mapper추가
+@MapperScan(value = {"com.example.test.mapper", "com.example.user.mapper", "com.example.dgBoard.mapper", "com.example.dgInfo.mapper", "com.example.KakoLogin.service" })
 @SpringBootApplication
 public class Test1Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Test1Application.class, args);
 	}
-	
 	
 	//Tiles
 	@Bean

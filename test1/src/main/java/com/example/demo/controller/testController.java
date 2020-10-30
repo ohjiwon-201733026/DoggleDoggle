@@ -19,14 +19,14 @@ public class testController {
 	 @Autowired
 	 testMapper testMapper;
 	
-	   @RequestMapping(value = "/")
-	   public String test(Model model, testVo testvo) {
-		   List<testVo> select = testMapper.select();
-		   model.addAttribute("select", select);
-		   System.out.println(testMapper.select().toString());
-		   System.out.println("gggggg");
-	      return "/test/test";
-	   }
+//	   @RequestMapping(value = "/")
+//	   public String test(Model model, testVo testvo) {
+//		   List<testVo> select = testMapper.select();
+//		   model.addAttribute("select", select);
+//		   System.out.println(testMapper.select().toString());
+//		   System.out.println("gggggg");
+//	      return "/test/test";
+//	   }
 
 	   
 	   @RequestMapping(value = "/test2")

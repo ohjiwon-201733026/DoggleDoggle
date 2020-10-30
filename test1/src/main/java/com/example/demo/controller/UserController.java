@@ -62,9 +62,9 @@ public class UserController {
 		return "/login";
 	}
 	
-	@RequestMapping(value = "/login")
-	public String login(UserVo vo) {
-//		System.out.println(vo.toString()); 
-		return "login";
-	}
+//	@RequestMapping(value = "/login")
+//	public String login(UserVo vo) {
+////		System.out.println(vo.toString()); 
+//		return "login";
+//	}
 }
