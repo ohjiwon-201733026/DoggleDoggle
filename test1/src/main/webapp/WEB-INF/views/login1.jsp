@@ -9,6 +9,9 @@
 <title>Login</title>
 </head>
 <body>
+<script type="text/javascript">
+
+</script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <div id="container" class="cls-container">
         
@@ -50,6 +53,9 @@
 						 <button type="button" id="babo" class="btn btn-primary btn-lg btn-block" onclick="location.href='${pageContext.request.contextPath}/signUp'">Sign Up</button>
 		                
 		            </form>
+		            
+		            
+		            
 		        </div>
 		
 <!-- 		        <div class="pad-all"> -->
